@@ -36,6 +36,28 @@
                 <label for="tel">Teléfono:</label>
                 <!-- type="tel": campo telefónico; pattern: formato exigido (9 números) -->
                 <input type="tel" id="tel" name="telefono" pattern="[0-9]{9}">
+                <br><br>
+                <label for="fecha">Fecha de nacimiento:</label>
+                <!-- type="date": abre un selector de calendario para elegir una fecha -->
+                <input type="date" id="fecha" name="nacimiento">
+                <br><br>
+
+                <label for="foto">Foto de perfil:</label>
+                <!-- type="file": permite al usuario seleccionar y subir un archivo desde 
+                 su equipo -->
+                <input type="file" id="foto" name="archivo">
+                <br><br>
+
+                <label for="curso">Curso:</label>
+                <!-- value="2026-27": establece un valor predeterminado en el campo; 
+                readonly: hace que el campo sea de solo lectura (el usuario no puede modificarlo) -->
+                <input type="text" id="curso" name="curso" value="2026-27" readonly>
+                <br><br>
+
+                <label for="centro">Centro educativo:</label>
+                <!-- disabled: desactiva el campo por completo (no se puede editar ni se envía
+                  en el formulario) -->
+                <input type="text" id="centro" name="centro" value="IES La Asunción" disabled>
             </fieldset>
         </form>
 </body>
