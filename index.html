@@ -82,6 +82,35 @@
 
             <input type="checkbox" id="bd" name="intereses" value="bd">
             <label for="bd">Bases de Datos</label>
+            <br><br>
+            <label for="horas">Horas de estudio diarias:</label>
+            <!-- type="number": selector numérico; min/max: rango permitido; step: incremento entre valores -->
+            <input type="number" id="horas" name="horas" min="0" max="10" step="2">
+            <br><br>
+
+            <label for="nivel">Nivel de experiencia (1 a 10):</label>
+            <!-- type="range": deslizador de rango numérico -->
+            <input type="range" id="nivel" name="nivel" min="1" max="10">
+            <br><br>
+
+            <label for="color">Color favorito:</label>
+            <!-- type="color": abre un selector de color en formato hexadecimal -->
+            <input type="color" id="color" name="color">
+            <br><br>
+
+            <label for="hora">Hora preferida de contacto:</label>
+            <!-- type="time": selector de hora del día -->
+            <input type="time" id="hora" name="hora">
+            <br><br>
+
+            <label for="semana">Semana preferida:</label>
+            <!-- type="week": selector de semana y año -->
+            <input type="week" id="semana" name="semana">
+            <br><br>
+
+            <label for="mes">Mes de incorporación:</label>
+            <!-- type="month": selector de mes y año -->
+            <input type="month" id="mes" name="mes">
         </fieldset>
         </form>
 </body>
