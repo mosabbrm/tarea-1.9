@@ -153,6 +153,22 @@
         <button type="reset">Limpiar (button)</button>
         <button type="button">Genérico (button)</button>
     </form>
+<!-- form para conectar con el buscador externo de la Wikipedia -->
+        <form action="https://es.wikipedia.org/w/index.php" method="get">
+            <br><hr><br>
+            <!-- type="search": campo optimizado para búsquedas; 
+            list: asocia el input con un elemento datalist mediante su id -->
+            <label for="busqueda-wiki">Buscar en Wikipedia:</label>
+            <input type="search" id="busqueda-wiki" name="search" list="sugerencias">
+            
+            <!-- datalist: proporciona una lista de opciones predefinidas para autocompletar un input -->
+            <datalist id="sugerencias">
+                <option value="Formulario web">
+                <option value="HTML">
+                <option value="Protocolo de transferencia de hipertexto">
+            </datalist>
 
+            <button type="submit">Buscar en Wikipedia</button>
+        </form>
 </body>
 </html>
