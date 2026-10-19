@@ -186,5 +186,17 @@
             </select>
             <button type="submit">Buscar en el Mapa</button>
         </form>
+        <!-- form para enviar la web al validador oficial W3C -->
+        <form action="https://validator.w3.org/nu/" method="get">
+            <br><hr><br>
+            <label for="doc-url">Validar código HTML:</label>
+            <!-- type="url": valida que el texto introducido sea una dirección web correcta -->
+            <input type="url" id="doc-url" name="doc" value="https://TU_USUARIO.github.io/TU_REPOSITORIO/">
+            
+            <input type="checkbox" id="showsource" name="showsource" value="yes">
+            <label for="showsource">Ver el código</label>
+            <br><br>
+            <button type="submit">Validar HTML</button>
+        </form>
 </body>
 </html>
