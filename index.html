@@ -59,6 +59,30 @@
                   en el formulario) -->
                 <input type="text" id="centro" name="centro" value="IES La Asunción" disabled>
             </fieldset>
+            <fieldset>
+            <legend>Preferencias</legend>
+
+            <!-- type="radio": opción de selección única dentro de un grupo con el mismo name; value: valor enviado al servidor -->
+            <label>Turno:</label><br>
+            <input type="radio" id="mañana" name="turno" value="manana">
+            <!-- label en las opciones de selección para asociar el texto con su id -->
+            <label for="mañana">Mañana</label>
+
+            <input type="radio" id="tarde" name="turno" value="tarde">
+            <label for="tarde">Tarde</label>
+            <br><br>
+
+            <!-- type="checkbox": casilla de verificación de selección múltiple con el mismo name -->
+            <label>Intereses:</label><br>
+            <input type="checkbox" id="web" name="intereses" value="web">
+            <label for="web">Desarrollo Web</label>
+
+            <input type="checkbox" id="sistemas" name="intereses" value="sistemas">
+            <label for="sistemas">Sistemas</label>
+
+            <input type="checkbox" id="bd" name="intereses" value="bd">
+            <label for="bd">Bases de Datos</label>
+        </fieldset>
         </form>
 </body>
 </html>
