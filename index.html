@@ -111,6 +111,27 @@
             <label for="mes">Mes de incorporación:</label>
             <!-- type="month": selector de mes y año -->
             <input type="month" id="mes" name="mes">
+            <br><br>
+            <label for="modulos">Módulos matriculados:</label><br>
+            <!-- select: despliega una lista de opciones; multiple: permite seleccionar más de una opción -->
+            <select id="modulos" name="modulos" multiple>
+                <!-- optgroup: agrupa opciones con un título descriptivo (label) -->
+                <optgroup label="Primer curso">
+                    <!-- option: representa cada opción disponible; selected: marca esta opción seleccionada por defecto -->
+                    <option value="lm" selected>Lenguajes de marcas</option>
+                    <option value="prog">Programación</option>
+                    <option value="bd">Bases de datos</option>
+                </optgroup>
+                <optgroup label="Otros">
+                    <option value="ipe">IPE</option>
+                    <option value="ing">Inglés</option>
+                </optgroup>
+            </select>
+            <br><br>
+
+            <label for="comentarios">Comentarios:</label><br>
+            <!-- textarea: área de texto multilínea; rows: filas visibles; cols: columnas o ancho visible -->
+            <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Escribe aquí tus observaciones..."></textarea>
         </fieldset>
         </form>
 </body>
