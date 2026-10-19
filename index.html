@@ -15,7 +15,27 @@
             legend: sirve para poner un título o leyenda descriptiva al grupo del fieldset -->
             <fieldset>
                 <legend>Datos personales by Mosab</legend>
-                <!-- Aquí iremos añadiendo los campos más adelante -->
+                <!-- label: etiqueta un campo; for: la vincula al id del input -->
+                <label for="nombre">Nombre:</label>
+                <!-- type="text": texto simple; placeholder: texto de ayuda; required:
+                  obligatorio; autofocus: enfoca al cargar; size: ancho visible; maxlength: límite de letras -->
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" 
+                required autofocus size="30" maxlength="40">
+                <br><br>
+
+                <label for="pass">Contraseña:</label>
+                <!-- type="password": oculta el texto; minlength: mínimo de caracteres -->
+                <input type="password" id="pass" name="password" minlength="8">
+                <br><br>
+
+                <label for="correo">Correo electrónico:</label>
+                <!-- type="email": valida formato de e-mail -->
+                <input type="email" id="correo" name="email" required>
+                <br><br>
+
+                <label for="tel">Teléfono:</label>
+                <!-- type="tel": campo telefónico; pattern: formato exigido (9 números) -->
+                <input type="tel" id="tel" name="telefono" pattern="[0-9]{9}">
             </fieldset>
         </form>
 </body>
